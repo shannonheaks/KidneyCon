@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shannonhealy.kidneycon.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clinicIMG"
+        android:src="@drawable/cliniconnect_full"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to CliniConnect"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/clinicIMG"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patName"
+        android:text="Pat Name"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your next appointment is:"
+        android:layout_below="@+id/patName"
+        android:id="@+id/textView4"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patDate"
+        android:text="Pat Date"
+        android:layout_below="@id/textView4"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp" />
+</RelativeLayout>

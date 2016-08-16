@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_paperwork"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Pre-Visit Forms" />
+        <item
+            android:id="@+id/nav_postvisit"
+            android:icon="@drawable/ic_done_black_24dp"
+            android:title="Post-Visit Survey" />
+        <item
+            android:id="@+id/nav_log"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Daily Vitals Log" />
+
+        <item
+            android:id="@+id/nav_clinical_test"
+            android:icon="@drawable/ic_receipt_black_24dp"
+            android:title="Lab Forms" />
+        <item
+            android:id="@+id/nav_directions"
+            android:icon="@drawable/ic_directions_black_24dp"
+            android:title="Get Directions" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="Clinic Information" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_phone"
+                android:icon="@drawable/ic_phone_black_24dp"
+                android:title="Call Clinic" />
+            <item
+                android:id="@+id/nav_email"
+                android:icon="@drawable/ic_email_black_24dp"
+                android:title="Email Clinic" />
+        </menu>
+    </item>
+
+</menu>

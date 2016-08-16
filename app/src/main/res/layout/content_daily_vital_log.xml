@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250px"
+            android:gravity="bottom"
+            android:layout_marginTop="35dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/bloodSugarImageView"
+                android:src="@drawable/bloodsugar" />
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:id="@+id/EditTextbloodSugar"
+                android:hint="Enter Blood Sugar (mg/dL)."
+                android:layout_weight="1"
+                android:numeric="integer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250px"
+            android:gravity="bottom">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:id="@+id/bloodPressureImageView"
+                android:src="@drawable/bloodpressure" />
+
+            <EditText
+                android:layout_width="72dp"
+                android:layout_height="76dp"
+                android:id="@+id/EditTextBloodPressure"
+                android:hint="Blood Pressure. (Systolic)"
+                android:layout_weight="1"
+                android:numeric="integer" />
+
+            <EditText
+                android:layout_width="72dp"
+                android:layout_height="76dp"
+                android:id="@+id/EditTextBloodPressureDia"
+                android:hint="(Diastolic)"
+                android:layout_weight="1"
+                android:numeric="integer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250px"
+            android:gravity="bottom">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/temperature" />
+
+            <EditText
+                android:layout_width="72dp"
+                android:layout_height="76dp"
+                android:id="@+id/EditTextTemperature"
+                android:hint="Enter Body Temperature in °F."
+                android:layout_weight="1"
+                android:numeric="integer" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="250px"-->
+            <!--android:gravity="bottom">-->
+            <!--<ImageView-->
+                <!--android:layout_width="55dp"-->
+                <!--android:layout_height="55dp"-->
+                <!--android:id="@+id/pregTestImageView"-->
+                <!--android:src="@drawable/pregtest" />-->
+
+            <!--<EditText-->
+                <!--android:layout_width="72dp"-->
+                <!--android:layout_height="76dp"-->
+                <!--android:id="@+id/EditTextPregTest"-->
+                <!--android:hint="Enter Pregnancy Test Result True/False"-->
+                <!--android:layout_weight="1" />-->
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250px"
+            android:gravity="bottom">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:id="@+id/howAreYouFeelingImageView"
+                android:src="@drawable/howareyoufeelingrightnow" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Please describe how are you feeling right now."
+                android:ems="10"
+                android:id="@+id/EditTextHowareyoufeeling"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Self Report"
+            android:id="@+id/ButtonSubmitSelfReport"
+            android:layout_gravity="center_horizontal"
+            android:onClick="submitSelfReport" />
+
+    </LinearLayout>
+</ScrollView>
